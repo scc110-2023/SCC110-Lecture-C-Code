@@ -57,6 +57,10 @@ TListItem *insert_into_list(TListItem **head, int newValue)
     return newItem;
 }
 
+// Iterate through the list, printing each item
+// Note: head will be NULL when it reaches the end of the list,
+// NULL is 0 which is also FALSE, so the loop exits.
+
 void print_list(TListItem *head)
 {
     while (head) {
